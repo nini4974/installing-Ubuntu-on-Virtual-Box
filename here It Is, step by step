@@ -1,0 +1,41 @@
+How to install Ubuntu 2023 in VirtualBox_Ubuntu Linux from (kskroyal.com) - credit
+
+Downloading and Installing Ubuntu on Virtual Box in Windows 11
+1.	Go to task manager (Ctrl+ Shift+ Esc) and then performance and then down right-side check if virtualization is enabled, if not u must enable.
+2.	Laptop users must enable high performance mode under power options.
+3.	Then go to oracle download virtual box and download the Windows hosts https://www.virtualbox.org/wiki/Downloads Once it is done, go to ubuntu and download Ubuntu Desktop (LTS version) https://ubuntu.com/download/desktop 
+
+a.	Double click and start installing the virtual box. To do so you must click next, yes and install it.
+•	On the virtual box interface click new button name it “UbuntuLinux”.
+•	Then type to Linux
+•	Version Ubuntu 64-bit, then click on next
+•	Give base memory and processors but make sure status remain in the green color, then click on next
+•	Allocate the disk size 30gb or higher, after u click next will show u the summary of the feature you put on the virtual machine click finish.
+
+•	Then u select the Ubuntu Linux and go to settings
+o	Go to General then Advanced then enable it shared clipboard to bidirectional and drag’n’drop to bidirectional
+o	Then go to display and increase video memory to maximum, also enable extended features with enable 3d acceleration
+o	Then select storage on the side bar go to controller ide click empty then click on the dvd icon to the right side then choose a disk file go a head and import the ubuntu iso that we download. Then after we left as the remain default. 
+
+4.	Start Ubuntu Linux using virtual box
+•	It is better your pc have to be connected to the internet
+•	Click try install Ubuntu or using keyboard
+•	Choose language and choose also install ubuntu
+•	Chose keyboard layout 
+•	Select these 3 normal installations, install third party software for graphics and WIFI hardware, and lastly download and install support for additional media formats. Don’t check minimal installation
+•	Choose erase disk and install ubuntu, then click continue and select time zone
+•	Setup your user account. This could take a few minutes so sit back and please be patient.
+•	Once it is complete click restart or continue to reboot. Then u can sign in using your password, use full screen mode using ctrl + f.
+•	Time to install acceleration, keyboard sharing and more functionality.
+o	Using the menu bar click devices and choose insert guest additional cd image…. Then click cancel
+o	Once it is monitored, open the file manager, and u will see VBox_Gas_7.0.10 icon on the side bar select it, then copy all the files inside of it and paste them in document directory.
+o	Then in the same path or documents directory right click and open terminal. If u seen any updates click update then and right sudo apt update on the terminal, also sudo apt upgrade, and lastly apt list –upgradable.
+o	tab this command to install kernel headers sudo apt install linux-headers-$(uname -r)
+o	type ls to see list of documents directory, then we need to install such file VboxLinuxAdditions.run, to enable extra features of the virtual box. To do so change the permissions to this file by running this command chmod +x VBoxLinuxAdditions.run, after write this command to execute the package sudo ./VBoxLinuxAdditions.run, then type yes to continue, that is it guest addition support been added to ubuntu virtual machine, last restart by typing sudo reboot now.
+
+Then will notice works fine and perfect full screen resolution.  
+
+
+
+•	In case u want uninstall ubuntu
+-	Head to the user interface virtual box, from the side bar right click ubuntu and choose to remove delete all files.
